@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: #ffffff;
 }
 .header{
     position: relative;
@@ -23,7 +23,7 @@
     position: relative;
     height: 10%;
     width: 91%;
-    border-bottom: 2px solid #8080d5;
+    /* border-bottom: 2px solid #8080d5; */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -31,9 +31,12 @@
 
 }
 .header-text{
-    font-size: 21px;
-    font-weight: bold;
-    font-family: sans-serif;
+    font-weight: 600;
+    font-family: "Arista Pro";
+    color: #4b55c8;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0;
 }
 .recent-suggested-div{
     height: 30%;
@@ -49,11 +52,18 @@
   }
 .recent-suggested-div::-webkit-scrollbar-thumb {
 border-radius: 5px;
-background-color: rgba(54, 44, 202, 0.705);
+background-color: #6773ab;
 }
 .options-div{
     height: 50%;
     width: 90%;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 .product-container{
     height: 80%;
@@ -62,7 +72,49 @@ background-color: rgba(54, 44, 202, 0.705);
     background-color: rgb(255, 255, 255);
     position: relative;
     border-radius: 10px;
-    border: 2px solid #cfcfcf;
+    border: 1px solid #e6e6e6;
     margin-left: 5px;
     margin-right: 5px;
+    background-image: url(./imgs/APL032360-0.jpg); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+.bot-question{
+    width: fit-content;
+    padding: 4px;
+    max-width: 40%;
+    background-color: #4251f53d;
+    border: 1px solid #6773ab;
+    border-radius: 6px;
+    margin-left: 5%;
+    margin-right: 55%;
+    margin-top: 20px;
+}
+.user-input{
+    width: 70%;
+    height: 30px;
+    border-radius: 16px;
+    border: 1px solid #455ac4;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.sendButton{
+    background-image: url(./imgs/paper-plane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 25px;
+    border: none;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 50%;
+}
+.input-form{
+    width: 100%;
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
 }
